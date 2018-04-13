@@ -1,2 +1,1 @@
-# shoeApp-landing-page
-The code files for the responsing landing page project
+Shoe App Ladning Page project files
