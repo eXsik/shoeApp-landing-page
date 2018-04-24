@@ -187,10 +187,11 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 body {
-  background: #0d1218 url("../img/ep_naturalblack.png");
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -344,50 +345,44 @@ hr {
   width: 100%;
   left: 0; }
 
-body {
-  height: 100%;
+#header {
+  background: linear-gradient(to left bottom, rgba(67, 233, 123, 0.8) 0%, rgba(56, 249, 215, 0.8) 100%), url("../img/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden; }
+  #header img {
+    max-width: 500px;
+    width: 100%; }
+  #header article {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; }
+    #header article h1 {
+      color: #fff;
+      margin-bottom: 5px; }
+    #header article p {
+      font-size: 16px; }
+
+.main-nav {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#page-home {
-  margin: 20px;
-  display: flex; }
-
-.author {
-  margin-top: 100px; }
-  .author p {
-    margin: 0; }
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 20px 0 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
-.wrapper-starter {
-  width: 100%;
-  max-width: 700px;
-  background: white;
-  padding: 40px;
-  border-radius: 2px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
-  text-align: center; }
-  .wrapper-starter p {
-    color: #666; }
-
-h1 {
-  margin-bottom: 20px; }
-
-h4 {
-  margin-top: 100px; }
-
-.button {
-  margin-top: 50px;
-  border: 2px solid #0074D9;
-  color: #0074D9; }
-
-.flex-video {
-  border: 1px solid black; }
+  margin-top: 20px; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto; }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: 700; }
+  .main-nav .download {
+    background: #fff;
+    color: #43e97b;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease; }
+    .main-nav .download:hover {
+      transform: translateY(3px); }
