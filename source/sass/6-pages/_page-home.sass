@@ -11,15 +11,16 @@
   article
     color: #fff
     text-align: center
-    width: 60%
+    width: 70%
     margin: 0 auto
 
     h1
       color: #fff
-      margin-bottom: 5px
+      margin: 20px
+      text-transform: uppercase
+      letter-spacing: 10px
+      line-height: 1.5
     
-    p
-      font-size: 16px
 
 .main-nav
   display: flex
@@ -27,6 +28,7 @@
 
   li  
     list-style: none
+
   li:first-child
     margin-right: auto
   a
@@ -37,6 +39,10 @@
     padding: 10px 40px
     text-decoration: none
     font-weight: 700
+    
+    &:hover
+      color: $ocean
+
 
   .download 
     background: #fff
@@ -46,3 +52,22 @@
 
     &:hover 
       transform: translateY(3px)
+
+#brands
+  max-width: 100%
+  ul
+    padding: 20px 0
+    list-style: none
+    background: #fff
+    display: flex
+    justify-content: center
+    flex: 1 1 33%
+    box-sizing: border-box
+    flex-wrap: wrap
+
+    @media only screen and (max-width:800px)
+      li
+        text-align: center
+        flex: 1 1 30%
+        flex-wrap: wrap
+

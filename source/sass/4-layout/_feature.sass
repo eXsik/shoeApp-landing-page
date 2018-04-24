@@ -1,0 +1,55 @@
+#features
+  background: #f9f9f9
+  position: relative
+
+  &:after
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background: inherit
+    content: ''
+    height: 100%
+    transform: skewY(-10deg)
+    transform-origin: 100%
+    z-index: -1
+  
+  .cards
+    display: flex
+    justify-content: center
+    align-items: stretch
+    text-align: center
+
+    @media screen and (max-width: 800px)
+      flex-direction: column 
+
+  h2
+    text-transform: uppercase
+    text-align: center
+    margin: 80px
+  
+  .featured-card
+    background: #ffffff
+    padding: 30px
+    border-radius: 5px
+    flex: 1 1 33%
+    margin: 20px
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,.2)
+    
+    &:first-child
+      border-top: 3px solid #30E2C0
+
+    &:nth-child(2)
+      border-top: 3px solid #00ADFF
+
+      svg
+        margin-top: 10px
+    
+    &:nth-child(3)
+      border-top: 3px solid #510EED
+
+      svg
+        margin-top: 10px
+    
+    h3
+      margin: 20px

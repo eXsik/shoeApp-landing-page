@@ -328,6 +328,52 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+#features {
+  background: #f9f9f9;
+  position: relative; }
+  #features:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    content: '';
+    height: 100%;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+  #features .cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      #features .cards {
+        flex-direction: column; } }
+  #features h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 80px; }
+  #features .featured-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    flex: 1 1 33%;
+    margin: 20px;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+    #features .featured-card:first-child {
+      border-top: 3px solid #30E2C0; }
+    #features .featured-card:nth-child(2) {
+      border-top: 3px solid #00ADFF; }
+      #features .featured-card:nth-child(2) svg {
+        margin-top: 10px; }
+    #features .featured-card:nth-child(3) {
+      border-top: 3px solid #510EED; }
+      #features .featured-card:nth-child(3) svg {
+        margin-top: 10px; }
+    #features .featured-card h3 {
+      margin: 20px; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -356,13 +402,14 @@ hr {
   #header article {
     color: #fff;
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto; }
     #header article h1 {
       color: #fff;
-      margin-bottom: 5px; }
-    #header article p {
-      font-size: 16px; }
+      margin: 20px;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      line-height: 1.5; }
 
 .main-nav {
   display: flex;
@@ -379,6 +426,8 @@ hr {
     padding: 10px 40px;
     text-decoration: none;
     font-weight: 700; }
+    .main-nav a:hover {
+      color: #38f9d7; }
   .main-nav .download {
     background: #fff;
     color: #43e97b;
@@ -386,3 +435,20 @@ hr {
     transition: all .3s ease; }
     .main-nav .download:hover {
       transform: translateY(3px); }
+
+#brands {
+  max-width: 100%; }
+  #brands ul {
+    padding: 20px 0;
+    list-style: none;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 33%;
+    box-sizing: border-box;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 800px) {
+      #brands ul li {
+        text-align: center;
+        flex: 1 1 30%;
+        flex-wrap: wrap; } }
