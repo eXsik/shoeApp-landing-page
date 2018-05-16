@@ -374,6 +374,31 @@ hr {
     #features .featured-card h3 {
       margin: 20px; }
 
+#discount {
+  margin-top: 100px; }
+
+.discountLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .discountLayout h2 {
+    margin-bottom: 30px; }
+  .discountLayout .offer {
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.8; }
+    .discountLayout .offer .button {
+      background: #009efd;
+      background: linear-gradient(140deg, #009efd 0%, #15c9cb 48%, #2af598 100%);
+      color: #fff;
+      padding: 10px 60px;
+      font-size: 16px; }
+
+#download {
+  background: #5825ec;
+  padding: 100px 0;
+  margin-top: -75px; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
